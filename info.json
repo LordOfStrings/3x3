@@ -1,60 +1,38 @@
 {
-    "keyboard_name": "Macropad RP2040",
-    "manufacturer": "Adafruit",
-    "maintainer": "Jpe230",
+    "keyboard_name": "3x3",
+    "manufacturer": "xxx xx",
+    "maintainer": "qmk",
+    "bootloader": "rp2040",
+    "processor": "RP2040",
+    "debounce": 5,
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "nkro": true,
+        "via": true
+    },
+    "matrix_pins": {
+        "cols": ["GP6", "GP7", "GP5"],
+        "rows": ["GP10", "GP11", "GP12"]
+    },
+    "url": "some.link.com",
     "usb": {
-        "vid": "0x239A",
-        "pid": "0x0108",
-        "device_version": "0.0.1"
+        "device_version": "0.0.1",
+        "pid": "0x7777",
+        "vid": "0xBABA"
     },
     "layouts": {
         "LAYOUT": {
             "layout": [
-                {
-                    "label": "Mute",
-                    "x": 0,
-                    "y": 0
-                },
-                {
-                    "label": "Enter",
-                    "x": 0,
-                    "y": 1
-                },
-                {
-                    "label": "KC_0",
-                    "x": 0,
-                    "y": 2
-                },
-                {
-                    "label": "BackSpace",
-                    "x": 1,
-                    "y": 0
-                },
-                {
-                    "label": "KC_7",
-                    "x": 1,
-                    "y": 1
-                },
-                {
-                    "label": "KC_8",
-                    "x": 1,
-                    "y": 2
-                },
-                {
-                    "label": "KC_9",
-                    "x": 2,
-                    "y": 0
-                },
-                {
-                    "label": "KC_4",
-                    "x": 2,
-                    "y": 1
-                },
-                {
-                    "label": "KC_5",
-                    "x": 2,
-                    "y": 2
-                }
+                { "label": "K00", "matrix": [0, 0], "w": 1, "x": 0, "y": 0 },
+                { "label": "K01", "matrix": [0, 1], "w": 1, "x": 1, "y": 0 },
+                { "label": "K02", "matrix": [0, 2], "w": 1, "x": 2, "y": 0 },
+                { "label": "K10", "matrix": [1, 0], "w": 1, "x": 3, "y": 0 },
+                { "label": "K11", "matrix": [1, 1], "w": 1, "x": 4, "y": 0 },
+                { "label": "K12", "matrix": [1, 2], "w": 1, "x": 5, "y": 0 },
+                { "label": "K20", "matrix": [2, 0], "w": 1, "x": 6, "y": 0 },
+                { "label": "K21", "matrix": [2, 1], "w": 1, "x": 7, "y": 0 },
+                { "label": "K22", "matrix": [2, 2], "w": 1, "x": 8, "y": 0 }
             ]
         }
     }
